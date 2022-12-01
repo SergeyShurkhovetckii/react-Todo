@@ -1,0 +1,14 @@
+@import "./App.scss";
+
+.input-add {
+    width: 100%;
+    background: #262626;
+    border: rem(1) solid #0d0d0d;
+    border-radius: rem(8);
+    padding: rem(16) rem(16);
+    color: #fff;
+    font-size: rem(16);
+    &:focus-visible{
+        border: rem(1) solid #5E60CE;
+    }
+}

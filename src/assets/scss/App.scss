@@ -1,0 +1,55 @@
+@import './res.scss';
+@import './function.scss';
+@import './_mixins.scss';
+@import './font.scss';
+
+$gray : #0D0D0D;
+body{
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: rem(16);
+    line-height: 1.5;
+    background-color:#1A1A1A;
+}
+.container-fluid{
+    width: 100%;
+    background-color: $gray;
+
+}
+
+.container{
+    max-width: rem(736);
+    padding-left: rem(10);
+    padding-right: rem(10);
+    margin-left: auto;
+    margin-right: auto;
+}
+.count-task{
+    padding-top: rem(65);
+    padding-bottom: rem(25);
+    font-weight: 700;
+    font-size: rem(14);
+    line-height: rem(17);
+    color: #4EA8DE;
+    display: flex;
+    align-items: center;
+    gap:rem(8);
+    &__count{
+        background: #333333;
+        border-radius: 999px;
+        color: #D9D9D9;
+        padding: rem(2) rem(8);
+        font-weight: 700;
+        font-size: rem(12);
+    }
+}
+.todo-list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:rem(12);
+
+}
+.strike {
+    text-decoration: line-through;
+  }

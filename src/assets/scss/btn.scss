@@ -1,0 +1,29 @@
+@import './App.scss';
+.btn{
+    background: #1E6F9F;
+    border-radius: rem(8);
+    padding: rem(16);
+    font-weight: 700;
+    font-size: rem(14);
+    color: #F2F2F2;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap:rem(8);
+    &::after{
+        content: url('../img/plus.svg');
+        width: rem(16);
+        height: rem(16);
+        display: flex;
+    }
+    &:hover{
+        background: #4EA8DE;
+        transition: 0.6s;
+    }
+}
+.form{
+    position: relative;
+    top:rem(25);
+    display: flex;
+    gap:rem(8);
+}
